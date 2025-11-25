@@ -2,11 +2,7 @@ h2{
     color:red;
 }
 p{
-    color:brown;
-    
-    text-align:left;
-    font-size:16px;
-    font-family:'Times New Roman', Times, serif;
+    text-align: center;
 }
 .par{
     color:chartreuse;
@@ -29,6 +25,22 @@ div{
 h1{
     text-align:center;
 }
-.box{
-
+.aarav{
+    display: block;
+}
+.aar{
+    display:inline;
+}
+.mam{
+    display: inline-block;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 2px;
+    padding: 20px;
+    height:300px;
+    width:200px;
+    text-align: center;
+    
 }
