@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+       .container{
+        display: flex;
+        background-color: aqua;
+        border: 2px solid black;
+        height:600px;
+        width:1000px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* justify-content: space-evenly;
+        align-items: stretch;
+        align-content:stretch; */
+        /* gap:10px; */
+       } 
+       .item{
+        height: 100px;
+        width: 100px;
+        border: 2px dashed black;
+        background: linear-gradient(to bottom, rgb(233, 111, 131),rgb(50, 3, 97));
+        /* align-content: center; */
+        text-align: center;
+        flex-grow:1;
+        
+       }
+       .item2{
+        order: -1;
+        /* flex-grow: 2; */
+        align-self: baseline;
+        /* flex-shrink: 10; */
+       }
+       
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">item1</div><!--order is zero of all child element. accroding to order of html document -->
+        <div class="item item2">item2</div>
+        <div class="item">item3</div>
+        <div class="item">item4</div>
+        
+    </div>
+</body>
+</html>
