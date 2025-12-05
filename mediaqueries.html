@@ -10,7 +10,7 @@
         body {
             border: 2px solid black;
             padding: 30px;
-            background: linear-gradient(to right, #90caf9, #e3f2fd);
+            /* background: linear-gradient(to right, #90caf9, #e3f2fd); */
             font-family: Arial, sans-serif;
         }
 
@@ -40,7 +40,7 @@
             margin-right:10px;
         }
 
-        nav ul {
+        nav  {
             display: flex;
             flex-direction: column;
             justify-content: space-around;
@@ -48,32 +48,45 @@
             gap: 10px;
         }
 
-        nav ul li {
+        /* nav ul li {
             list-style: none;
             text-align: center;
+            dislay:
+        } */
+        *{
+            margin:0px;
+            padding:0px;
         }
-
-        nav ul li a {
+        nav  {
             text-decoration: none;
             font-size: 20px;
             color: #0d47a1;
+            display:flex;
+            justify-content: space-between;
+            align-items:center;
+        padding:1 rem;       }
+        .menu{
+            display:none; 
+        }
+        .menu a{
+            text-decoration:none;
+
+        }
+        .hamburger{
+            font-size: 2rem;
+            cursor:pointer;
         }
 
         @media(min-width: 768px) {
 
-            p {
-                font-size: 15px;
-            }
-
-            .box {
-                background: linear-gradient(to right, #f8bbd0, #f48fb1);
-                border: 5px double #ad1457;
-            }
-
-            nav ul {
-                flex-direction: row;
-                justify-content: space-around;
-            }
+           .menu{
+            display:flex;
+            flex-direction: row;
+            width:auto;
+           }
+           .hamburger{
+            justify
+           }
         }
 
     </style>
@@ -81,22 +94,16 @@
 
 <body>
 
-    <div class="box2">
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est maiores atque excepturi...
-        </p>
-    </div>
-
-    <div class="box">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit est adipisci...
-    </div>
-
+    <!--display none-->
     <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+        <div class="menu">
+        <div class="logo">my site</div>
+        <div class="hamburger">=</div>
+            <a href="_#">Home</a></li>
+            <a href="_#">About</a></li>
+            <a href="_#">SErvices</a></li>
+            <a href="_#">Contact</a></li>
+        </div>
     </nav>
 
 </body>
