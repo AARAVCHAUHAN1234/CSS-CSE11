@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+            margin:0px;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        nav{
+            display:flex;
+            justify-content: space-between;
+            align-items:center;
+            background:black;
+            padding:1rem;
+            color:white;
+            text-decoration:none;
+            
+        }
+        .logo{
+            color:white;
+            font:1.5rem;
+        }
+        .menu{
+            display:none;
+            flex-direction:column;
+            background:gray;
+            position:absolute;
+            top:60px;
+            right:20px;
+            left:200px;
+        }
+        .menu a{
+            
+            color:white;
+            text-decoration:none;
+            padding:1rem;
+            display:block;
+        }
+        .hamburger{
+            font-size:2rem;
+            cursor:pointer;
+            color:white;
+        }
+        @media(min-width:768px){
+          .menu{
+            display:flex;
+            flex-direction:row;
+            position:static;
+            background:none;
+            width:auto;
+
+            
+          }    
+          .hamburger{
+            display:none;
+          }
+          .menu a{
+            color:white;
+            text-decoration:none;
+          }                                               
+        }
+    </style>
+</head>
+<body>
+<!-- <i class="fa-solid fa-bars"></i> -->
+ <nav>
+        <div class="logo">my site</div>
+        <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
+        <div class="menu"></div>
+            <a href="_#">Home</a></li>
+            <a href="_#">About</a></li>
+            <a href="_#">Services</a></li>
+            <a href="_#">Contact</a></li>
+        </div>
+</nav>
+
+</body>
+</html>
