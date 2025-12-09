@@ -74,19 +74,24 @@
         }
         .hamburger{
             font-size: 2rem;
-            cursor:pointer;
+            
         }
 
         @media(min-width: 768px) {
 
-           .menu{
-            display:flex;
-            flex-direction: row;
-            width:auto;
-           }
-           .hamburger{
-            justify
-           }
+            p {
+                font-size: 15px;
+            }
+
+            .box {
+                background: linear-gradient(to right, #f8bbd0, #f48fb1);
+                border: 5px double #ad1457;
+            }
+
+            nav ul {
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
         }
 
     </style>
@@ -94,6 +99,15 @@
 
 <body>
 
+    <div class="box2">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est maiores atque excepturi...
+        </p>
+    </div>
+
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit est adipisci...
+    </div>
     <!--display none-->
     <nav>
         <div class="menu">
